@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'categories_screen.dart';
 import 'product_details.dart';
 import 'products_screen.dart';
+import 'profile_page.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -100,7 +101,7 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
                         _buildDrawerItem(Icons.list, "Inventory", () => navigateTo(context, CategoriesScreen())),
                         _buildDrawerItem(Icons.shopping_cart, "Products", () => navigateTo(context, ProductsScreen())),
                         _buildDrawerItem(Icons.map, "Map", () => toggleDrawer()),
-                        _buildDrawerItem(Icons.person, "Profile", () => toggleDrawer()),
+                        _buildDrawerItem(Icons.person, "Profile", () => navigateTo(context, ProfileScreen())),
                         _buildDrawerItem(Icons.menu_book, "Read", () => navigateTo(context, ProductDetailsScreen())),
                         _buildDrawerItem(Icons.update, "Update", () => navigateTo(context, ProductDetailsScreen())),
                         _buildDrawerItem(Icons.delete, "Delete", () => toggleDrawer(), Colors.black),

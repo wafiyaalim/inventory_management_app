@@ -43,7 +43,7 @@ class _ProductsScreenState extends State<ProductsScreen> with SingleTickerProvid
       body: TabBarView(
         controller: _tabController,
         children: [
-          Center(child: Text("Sports (Coming Soon)")),
+          SportsInventory(),
           FruitsInventory(),
           DrinksInventory(),
           SnacksInventory(),
@@ -53,7 +53,18 @@ class _ProductsScreenState extends State<ProductsScreen> with SingleTickerProvid
     );
   }
 }
-
+class SportsInventory extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return buildInventoryList([
+      "Basketball",
+      "Cricket Bat",
+      "Cricket ball",
+      "Football",
+      "Hockey stick"
+    ]);
+  }
+}
 // Inventory Screens
 class FruitsInventory extends StatelessWidget {
   @override
