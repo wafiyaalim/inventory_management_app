@@ -24,7 +24,7 @@ class _ProductsScreenState extends State<ProductsScreen> with SingleTickerProvid
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color(0xFFE141D8),
+        backgroundColor: Color(0xFFF17982),
         title: Text("Inventory"),
         bottom: TabBar(
           controller: _tabController,
@@ -125,7 +125,7 @@ Widget buildExpandableCategory(String title, List<Widget> children) {
     child: Card(
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(10),
-        side: BorderSide(color: Colors.pink, width: 1),
+        side: BorderSide(color: Color(0xFFF17982), width: 1),
       ),
       child: Theme(
         data: ThemeData().copyWith(dividerColor: Colors.transparent),
@@ -175,11 +175,11 @@ Widget addProductButton() {
   return Center(
     child: ElevatedButton.icon(
       onPressed: () {},
-      icon: Icon(Icons.add, color: Colors.pink),
-      label: Text("Add Product", style: TextStyle(color: Colors.pink)),
+      icon: Icon(Icons.add, color: Color(0xFFF17982)),
+      label: Text("Add Product", style: TextStyle(color: Color(0xFFF17982))),
       style: ElevatedButton.styleFrom(
         backgroundColor: Colors.white,
-        side: BorderSide(color: Colors.pink),
+        side: BorderSide(color: Color(0xFFF17982)),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
         padding: EdgeInsets.symmetric(horizontal: 20, vertical: 12),
       ),

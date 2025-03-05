@@ -18,7 +18,7 @@ class _ProductDetailsScreenState extends State<ProductDetailsScreen> {
     return Scaffold(
       appBar:
       AppBar(title: Text("Inventory"),
-          backgroundColor: Color(0xFFE141D8)),
+          backgroundColor: Color(0xFFF17982)),
       body: Padding(
         padding: EdgeInsets.all(16.0),
         child: Form(

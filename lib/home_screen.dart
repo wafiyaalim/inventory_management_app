@@ -36,7 +36,7 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
     return Scaffold(
       appBar: AppBar(
         title: Text('Home'),
-        backgroundColor: Color(0xFFE141D8),
+        backgroundColor: Color(0xFFF17982),
         actions: [
           IconButton(icon: Icon(Icons.search), onPressed: () {}),
         ],
@@ -82,7 +82,7 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
                         CircleAvatar(
                           backgroundColor: Colors.white,
                           radius: 30,
-                          child: Icon(Icons.person, size: 40, color: Color(0xFFE141D8)),
+                          child: Icon(Icons.person, size: 40, color: Color(0xFFF17982)),
                         ),
                         SizedBox(height: 10),
                         Text(
