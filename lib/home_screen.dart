@@ -73,7 +73,7 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
                 children: [
                   // Remove DrawerHeader for full height effect
                   Container(
-                    color: Color(0xFFE141D8),
+                    color: Color(0xFFF17982),
                     width: double.infinity,
                     padding: EdgeInsets.all(20),
                     child: Column(
@@ -133,7 +133,7 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
 
   Widget _buildDrawerItem(IconData icon, String title, VoidCallback onTap, [Color color = Colors.black]) {
     return ListTile(
-      leading: Icon(icon, color: Color(0xFFE141D8)),
+      leading: Icon(icon, color: Color(0xFFF17982)),
       title: Text(title, style: TextStyle(color: color)),
       onTap: onTap,
     );
